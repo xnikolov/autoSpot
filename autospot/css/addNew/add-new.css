@@ -1,0 +1,207 @@
+/*COLORS*/
+.container {
+  width: 100%;
+  height: 110vh;
+  display: block;
+}
+
+.container input::-webkit-input-placeholder, .container textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.container input:-ms-input-placeholder, .container textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.container input::-ms-input-placeholder, .container textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.container input::placeholder, .container textarea::placeholder {
+  color: #fff;
+}
+
+.container .heading-container {
+  background: #21ad40;
+  padding: 15px 100px;
+}
+
+.container .heading-container h1 {
+  font-size: 1.8em;
+  color: #fff;
+}
+
+.container form {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #410075;
+}
+
+.container form aside {
+  -webkit-box-shadow: 2px 3px 8px #000;
+          box-shadow: 2px 3px 8px #000;
+}
+
+.container form aside .input-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container form aside .input-container select, .container form aside .input-container input, .container form aside .input-container #adv-search-btn {
+  width: 235px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  border: 1px #E3E3E3 solid;
+  background: unset;
+  border-radius: 10px;
+  color: #fff;
+  background: #410075;
+  font-size: 1.1em;
+}
+
+.container form aside .input-container select option, .container form aside .input-container input option, .container form aside .input-container #adv-search-btn option {
+  color: white;
+}
+
+.container form aside .input-container input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.container form aside .input-container input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.container form aside .input-container input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.container form aside .input-container input::placeholder {
+  color: #fff;
+}
+
+.container form aside .input-container .longInput {
+  width: 115px;
+}
+
+.container form aside .input-container .shortInput {
+  width: 60px;
+}
+
+.container form aside .input-container #search-btn {
+  margin-bottom: 10px;
+  background: #21ad40;
+  cursor: pointer;
+}
+
+.container form aside .input-container #adv-search-btn {
+  padding: 10px 35px;
+  margin-left: 12px;
+  background: none;
+  cursor: pointer;
+}
+
+.container form .add-new {
+  display: inline-block;
+  width: 70%;
+  padding-bottom: 40px;
+  background: #410075;
+}
+
+.container form .add-new .features {
+  padding-top: 45px;
+}
+
+.container form .add-new .features, .container form .add-new .security, .container form .add-new .city, .container form .add-new .price, .container form .add-new .description, .container form .add-new .image, .container form .add-new .phone {
+  padding-left: 5%;
+  margin-bottom: 20px;
+  color: #fff;
+  width: 100%;
+}
+
+.container form .add-new .features h2, .container form .add-new .security h2, .container form .add-new .city h2, .container form .add-new .price h2, .container form .add-new .description h2, .container form .add-new .image h2, .container form .add-new .phone h2 {
+  margin-bottom: 10px;
+}
+
+.container form .add-new .features input, .container form .add-new .security input, .container form .add-new .city input, .container form .add-new .price input, .container form .add-new .description input, .container form .add-new .image input, .container form .add-new .phone input {
+  margin-left: 2%;
+}
+
+.container form .add-new .city, .container form .add-new .price, .container form .add-new .phone {
+  margin-left: 20px;
+}
+
+.container form .add-new .city input, .container form .add-new .price input, .container form .add-new .phone input {
+  width: 235px;
+  padding: 8px 10px;
+  border: 1px #E3E3E3 solid;
+  background: unset;
+  border-radius: 10px;
+  color: #fff;
+  background: #410075;
+  font-size: 1.1em;
+}
+
+.container form .add-new .description textarea {
+  padding: 8px 10px;
+  border: 1px #E3E3E3 solid;
+  background: unset;
+  border-radius: 10px;
+  color: #fff;
+  background: #410075;
+  font-size: 1.1em;
+}
+
+.container form .add-new .image {
+  width: 700px;
+}
+
+.container form .add-new .image label {
+  color: #fff;
+  font-size: 1.3em;
+  padding: 5px 10px 20px 8px;
+}
+
+.container form .add-new .image input {
+  width: 235px;
+  padding: 8px 10px;
+  margin-bottom: 40px;
+  border: 1px #E3E3E3 solid;
+  background: unset;
+  border-radius: 10px;
+  color: #fff;
+  background: #410075;
+  font-size: 1.1em;
+}
+
+.container form .add-new .price {
+  margin-top: 40px;
+}
+
+.container form .add-new .price input {
+  padding: 10px 20px;
+  font-size: 1.3em;
+}
+
+.container form .add-new .submit {
+  margin-top: 20px;
+  margin-left: 3%;
+}
+
+.container form .add-new .submit input {
+  border-radius: 10px;
+  border: .5px solid #fff;
+  background: #21ad40;
+  color: #fff;
+  padding: 12px 20px;
+  margin-top: 40px;
+  font-size: 1.1em;
+}
+
+.container form .add-new .submit input:hover {
+  background: unset;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=add-new.css.map */

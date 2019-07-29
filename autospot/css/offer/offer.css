@@ -1,0 +1,180 @@
+/*COLORS*/
+.offer {
+  background: #fff;
+}
+
+.offer header {
+  height: 60px;
+  background: #410075;
+  display: table;
+}
+
+.offer header span {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.offer header span button {
+  float: left;
+}
+
+.offer header span button i {
+  margin-right: 10px;
+}
+
+.offer header #favBtn button {
+  float: right;
+  background: #21ad40;
+}
+
+.offer header button {
+  padding: 10px 25px;
+  background: unset;
+  border: .8px solid #fff;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.offer .car_title {
+  padding: 60px 8%;
+}
+
+.offer .car_title .left {
+  float: left;
+}
+
+.offer .car_title .left h1 {
+  font-size: 2em;
+}
+
+.offer .car_title .right {
+  float: right;
+}
+
+.offer .car_title .right h1 {
+  font-size: 2em;
+}
+
+.offer .car_title .right h1 span {
+  font-size: .8em;
+}
+
+.offer .image {
+  width: 100%;
+  position: relative;
+  background: #dddddd;
+}
+
+.offer .image img {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.offer .description {
+  width: 100%;
+  background: #dddddd;
+  margin-top: 150px;
+  padding: 40px 0;
+}
+
+.offer .description h2, .offer .description .content {
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  color: #000;
+}
+
+.offer .description h2 {
+  width: 80%;
+  font-size: 2.2em;
+}
+
+.offer .description .content {
+  width: 60%;
+}
+
+.offer .description .content p {
+  font-size: 1.5em;
+}
+
+.offer .specs {
+  width: 100%;
+  margin-top: 40px;
+  padding: 30px 0;
+}
+
+.offer .specs h1 {
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.offer .car-info {
+  background: #6300B4;
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+.offer .car-info .left {
+  width: 30%;
+  float: left;
+  margin-left: 20%;
+}
+
+.offer .car-info .left .property-name {
+  margin-top: 20px;
+}
+
+.offer .car-info .left .property-name p {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+.offer .car-info .right {
+  width: 30%;
+  margin-right: 20%;
+  float: right;
+}
+
+.offer .car-info .right .property-value {
+  margin-top: 20px;
+}
+
+.offer .car-info .right .property-value p {
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+}
+
+.offer .contacts {
+  width: 100%;
+  padding-left: 30%;
+  padding: 30px 0;
+  margin-top: 8%;
+  background: #dddddd;
+}
+
+.offer .contacts .info {
+  display: inline;
+  padding-left: 23%;
+}
+
+.offer .contacts .info p {
+  font-size: 2em;
+  display: inline;
+  font-weight: bold;
+}
+
+.offer .contacts .info p span {
+  font-size: .8em;
+  font-weight: normal;
+}
+/*# sourceMappingURL=offer.css.map */

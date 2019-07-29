@@ -1,0 +1,72 @@
+
+@import '../variables/variables.scss';
+
+
+header{
+    width: 90%;
+    height: 120px;
+    background: $header;
+    padding: 0 5%;
+
+    h1{
+        float: left;
+        display: table;
+        height: 100%;
+        
+        a{
+            display: table-cell;
+            height: 100%;
+            vertical-align: middle;
+            color: #fff;
+            font-size: 1.6em;
+            font-weight: bolder;
+
+            span{
+                font-size: .9em;
+                font-weight: bold;
+            }
+        }
+
+        a:hover{
+            font-weight: normal;
+            transition: .1s;
+
+            span{
+                font-weight: bolder;
+            }
+        }
+    }
+
+    nav{
+        float: right;
+        height: 100%;
+
+        ul{
+            height: 100%;
+
+            li{
+                float: left;
+                margin-right: 20px;
+                margin-top: 40px;
+                border: 1px solid $border;
+                border-radius: 10px;
+                padding: 10px 20px;
+                
+                a{
+                    color: #fff;
+                    font-size: 1.2em;
+                }
+            }
+
+            li:hover{
+                background: $search;
+                transition: .2s;
+                cursor: pointer;
+            }
+
+            li:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+/*COLORS*/
+.success-container {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+.success-container h1 {
+  margin-bottom: 20px;
+}
+
+.success-container button {
+  border-radius: 10px;
+  border: .5px solid #fff;
+  background: #21ad40;
+  padding: 12px 20px;
+  margin-top: 40px;
+}
+
+.success-container button a {
+  color: #fff;
+  font-size: 1em;
+}
+
+.success-container #publish-another {
+  background: #410075;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=success.css.map */

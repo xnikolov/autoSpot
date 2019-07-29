@@ -1,0 +1,186 @@
+@import '../variables/variables.scss';
+
+.container{
+    width: 100%;
+    height: 110vh;
+    display: block;
+
+    input::placeholder, textarea::placeholder{
+        color: #fff;
+    }
+
+    .heading-container{
+        background: $search;
+        padding: 15px 100px;
+
+        h1{
+            font-size: 1.8em;
+            color: #fff;
+        }
+    }
+
+    form{
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: $form;
+
+        aside{
+            box-shadow: 2px 3px 8px #000;
+
+            .input-container{
+                width: 100%;
+                margin-bottom: 20px;
+    
+                select, input, #adv-search-btn{
+                    width: 235px;
+                    padding: 8px 10px;
+                    margin-left: 10px;
+                    border: 1px $border solid; 
+                    background: unset;
+                    border-radius: 10px;
+                    color: #fff;
+                    background: $form;
+                    font-size: 1.1em;
+            
+                    option{
+                        color: rgb(255, 255, 255);
+                    }
+                }
+    
+                input::placeholder{
+                    color: #fff;
+                }
+                
+                .longInput{
+                    width: 115px;
+                }
+    
+                .shortInput{
+                    width: 60px;
+                }
+    
+                #search-btn{
+                    margin-bottom: 10px;
+                    background: $search;
+                    cursor: pointer;
+                }
+    
+                #adv-search-btn{
+                    padding: 10px 35px;
+                    margin-left: 12px;
+                    background: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .add-new{
+            display: inline-block;
+            width: 70%;
+            padding-bottom: 40px;
+            background: $form;
+            
+            .features{
+                padding-top: 45px;
+            }
+
+            .features, .security, .city, .price, .description, .image, .phone{
+                padding-left: 5%;
+                margin-bottom: 20px;
+                color: #fff;
+                width: 100%;
+               
+                h2{
+                    margin-bottom: 10px;
+                }
+
+                input{
+                    margin-left: 2%;
+                }
+            }
+
+            .city, .price, .phone{
+
+                margin-left: 20px;
+                
+                input{
+                    width: 235px;
+                    padding: 8px 10px;
+                    border: 1px $border solid; 
+                    background: unset;
+                    border-radius: 10px;
+                    color: #fff;
+                    background: $form;
+                    font-size: 1.1em;
+                    
+                }
+            }
+
+            .description{
+                
+                textarea{
+                    padding: 8px 10px;
+                    border: 1px $border solid; 
+                    background: unset;
+                    border-radius: 10px;
+                    color: #fff;
+                    background: $form;
+                    font-size: 1.1em;
+                }
+            }
+
+            .image{
+                width: 700px;
+                
+                label{
+                    color: #fff;
+                    font-size: 1.3em;
+                    padding: 5px 10px 20px 8px;
+                }
+
+                input{
+                    width: 235px;
+                    padding: 8px 10px;
+                    margin-bottom: 40px;
+                    border: 1px $border solid; 
+                    background: unset;
+                    border-radius: 10px;
+                    color: #fff;
+                    background: $form;
+                    font-size: 1.1em;
+                }
+            }
+            
+            .price{
+                margin-top: 40px;
+                
+                input{
+                    padding: 10px 20px;
+                    font-size: 1.3em;
+                }
+            }
+
+            .submit{
+                margin-top: 20px;
+                margin-left: 3%;
+
+                input{
+                    border-radius: 10px;
+                    border: .5px solid #fff;
+                    background: $search;
+                    color: #fff;
+                    padding: 12px 20px;
+                    margin-top: 40px;
+                    font-size: 1.1em;
+                }
+
+                input:hover{
+                    background: unset;
+                    cursor: pointer;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}

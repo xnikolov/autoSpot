@@ -1,0 +1,72 @@
+/*COLORS*/
+header {
+  width: 90%;
+  height: 120px;
+  background: #6300B4;
+  padding: 0 5%;
+}
+
+header h1 {
+  float: left;
+  display: table;
+  height: 100%;
+}
+
+header h1 a {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+header h1 a span {
+  font-size: .9em;
+  font-weight: bold;
+}
+
+header h1 a:hover {
+  font-weight: normal;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+header h1 a:hover span {
+  font-weight: bolder;
+}
+
+header nav {
+  float: right;
+  height: 100%;
+}
+
+header nav ul {
+  height: 100%;
+}
+
+header nav ul li {
+  float: left;
+  margin-right: 20px;
+  margin-top: 40px;
+  border: 1px solid #E3E3E3;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+header nav ul li:hover {
+  background: #21ad40;
+  -webkit-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=header.css.map */

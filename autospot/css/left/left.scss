@@ -1,0 +1,60 @@
+@import '../variables/variables.scss';
+
+aside{
+    float: left;
+    background: $header;
+    width: 290px;
+    padding: 40px 0;
+    
+    form{
+        width: 90%;
+        margin: 0 auto;
+        
+        .input-container{
+            width: 100%;
+            margin-bottom: 20px;
+
+            select, input, #adv-search-btn{
+                width: 235px;
+                padding: 8px 10px;
+                margin-left: 10px;
+                border: 1px $border solid; 
+                background: unset;
+                border-radius: 10px;
+                color: #fff;
+                background: $form;
+                font-size: 1.1em;
+        
+                option{
+                    color: rgb(255, 255, 255);
+                }
+            }
+
+            input::placeholder{
+                color: #fff;
+            }
+            
+            .longInput{
+                width: 115px;
+            }
+
+            .shortInput{
+                width: 60px;
+            }
+
+            #search-btn{
+                margin-bottom: 10px;
+                background: $search;
+                cursor: pointer;
+            }
+
+            #adv-search-btn{
+                padding: 10px 35px;
+                margin-left: 12px;
+                background: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

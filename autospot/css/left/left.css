@@ -1,0 +1,71 @@
+/*COLORS*/
+aside {
+  float: left;
+  background: #6300B4;
+  width: 290px;
+  padding: 40px 0;
+}
+
+aside form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+aside form .input-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+aside form .input-container select, aside form .input-container input, aside form .input-container #adv-search-btn {
+  width: 235px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  border: 1px #E3E3E3 solid;
+  background: unset;
+  border-radius: 10px;
+  color: #fff;
+  background: #410075;
+  font-size: 1.1em;
+}
+
+aside form .input-container select option, aside form .input-container input option, aside form .input-container #adv-search-btn option {
+  color: white;
+}
+
+aside form .input-container input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+aside form .input-container input:-ms-input-placeholder {
+  color: #fff;
+}
+
+aside form .input-container input::-ms-input-placeholder {
+  color: #fff;
+}
+
+aside form .input-container input::placeholder {
+  color: #fff;
+}
+
+aside form .input-container .longInput {
+  width: 115px;
+}
+
+aside form .input-container .shortInput {
+  width: 60px;
+}
+
+aside form .input-container #search-btn {
+  margin-bottom: 10px;
+  background: #21ad40;
+  cursor: pointer;
+}
+
+aside form .input-container #adv-search-btn {
+  padding: 10px 35px;
+  margin-left: 12px;
+  background: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=left.css.map */

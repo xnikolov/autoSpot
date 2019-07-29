@@ -1,0 +1,50 @@
+<aside>
+    <div class="filters">
+        <form action="search.php">
+            <div class="make input-container">
+                <select type="text" name="make" id="make-input">
+                    <option value="default">Марка</option>
+                </select>
+            </div>
+            <div class="model input-container">
+                <select type="text" name="model" id="model-input">
+                        <option value="default">Модел</option>
+               </select>
+            </div>
+            <div class="type input-container">
+                <select type="text" name="type" id="type-input">
+                    <option value="default">Купе</option>
+              </select>
+            </div>
+            <div class="transmition input-container">
+                <select type="text" name="transmition" id="transmition-input">
+                    <option value="default">Трансмисия</option>
+                </select>
+            </div>
+            <div class="wheel input-container">
+                <select type="text" name="wheel" id="wheel-input">
+                    <option value="default">Волан</option>
+                 </select>
+            </div>
+            <div class="color input-container">
+                <select type="text" name="color" id="color-input">
+                        <option value="default">Цвят</option>
+                </select>
+            </div>
+            <div class="power input-container">
+                <input class="longInput" type="number" name="powerMin" id="power-min" placeholder="Мощност от">
+                <input class="shortInput" type="number" name="powerMax" id="power-max" placeholder="До">
+            </div>
+            <div class="power input-container">
+                <input class="longInput" type="number" name="priceMin" id="price-min" placeholder="Цена от">
+                <input class="shortInput" type="number" name="priceMax" id="price-max" placeholder="До">
+            </div>
+            <div class="search input-container">
+                <input type="submit" value="Търсене" name="search" id="search-btn">
+            </div>
+            <div class="advanced-search input-container">
+                <a href="advanced-search.php" id="adv-search-btn">Разширено търсене</a>
+            </div>
+        </form>
+    </div>
+</aside>
