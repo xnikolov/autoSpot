@@ -55,6 +55,10 @@ header{
                 a{
                     color: #fff;
                     font-size: 1.2em;
+
+                    span{
+                        font-weight: bold;
+                    }
                 }
             }
 
@@ -69,4 +73,34 @@ header{
             }
         }
     }
+}
+
+@media (max-width: 650px){
+
+    header{
+        padding: 0 0;
+        width: 100%;
+        h1{
+            padding-left: 4%;
+            a{
+                font-size: 1em;
+            }
+        }
+
+
+        nav{
+            ul{
+                padding-right: 20px;
+                li{
+                    width: 60px;
+                    padding: 10px 5px;
+                    a{
+                        font-size: 1em;
+                        
+                    }
+                }
+            }
+        }
+    }
+
 }

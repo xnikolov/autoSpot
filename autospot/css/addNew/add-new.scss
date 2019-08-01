@@ -2,7 +2,7 @@
 
 .container{
     width: 100%;
-    height: 110vh;
+    height: 1000px;
     display: block;
 
     input::placeholder, textarea::placeholder{
@@ -11,22 +11,22 @@
 
     .heading-container{
         background: $search;
-        padding: 15px 100px;
-
+        padding: 10px 5%;
+        
         h1{
             font-size: 1.8em;
             color: #fff;
         }
     }
 
-    form{
+    .addNewForm{
         width: 100%;
         height: 100%;
         display: block;
         background: $form;
 
-        aside{
-            box-shadow: 2px 3px 8px #000;
+        .addNewLeft{
+            height: 800px;
 
             .input-container{
                 width: 100%;
@@ -66,12 +66,6 @@
                     cursor: pointer;
                 }
     
-                #adv-search-btn{
-                    padding: 10px 35px;
-                    margin-left: 12px;
-                    background: none;
-                    cursor: pointer;
-                }
             }
         }
 
@@ -104,7 +98,7 @@
 
                 margin-left: 20px;
                 
-                input{
+                input, #country_code{
                     width: 235px;
                     padding: 8px 10px;
                     border: 1px $border solid; 
@@ -115,10 +109,15 @@
                     font-size: 1.1em;
                     
                 }
+
+                #country_code{
+                    width: 90px;
+                }
             }
 
             .description{
-                
+                margin-top: 60px;
+                width: 400px;   
                 textarea{
                     padding: 8px 10px;
                     border: 1px $border solid; 
@@ -132,10 +131,12 @@
 
             .image{
                 width: 700px;
+                margin-top: 60px;
                 
                 label{
                     color: #fff;
-                    font-size: 1.3em;
+                    font-size: 1.5em;
+                    font-weight: bold;
                     padding: 5px 10px 20px 8px;
                 }
 
@@ -167,7 +168,7 @@
 
                 input{
                     border-radius: 10px;
-                    border: .5px solid #fff;
+                    border: .8px solid #fff;
                     background: $search;
                     color: #fff;
                     padding: 12px 20px;
@@ -184,3 +185,97 @@
         }
     }
 }
+
+@media only screen and(max-width: 1030px){
+    .container{
+        width: 100%;
+        .heading-container{
+            width: 100%;
+            padding: 0;
+            h1{
+                width: 300px;
+                margin: 0 auto;
+                padding: 10px 20px;
+                padding-left: 80px;
+                font-size: 1.5em;
+            }
+        }
+        
+        .addNewForm{
+            width: 100%;
+            height: 900px;
+            .addNewLeft{
+                width: 100%;
+                height: 100%;
+                margin-bottom: 30px;
+                
+                .input-container{
+                    width: 70%;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                    
+                    input, select{
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 15px 15px;
+                    }
+
+                    input{
+                        width: 90%;
+                    }
+                }
+                
+            }
+            .add-new{
+                display: block;
+                width: 100%;
+                margin: 0;
+                background: $form;
+                
+                .description, .city, .phone, .image, .price{
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 0;
+                    margin-bottom: 30px;
+
+                    h2{
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+
+                    textarea, input, select{
+                        display: block;
+                        width: 80%;
+                        margin: 0 auto;
+                        background: $heading;
+                    }
+
+                  
+                }
+
+                .phone{
+                    input{
+                        margin-bottom: 20px;
+                    }
+
+                    #country_code{
+                        margin-bottom: 60px;
+                    }
+                }
+
+                .submit{
+                    width: 100%;
+                    margin-top: 80px;
+
+                    input{
+                        display: block;
+                        width: 200px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+    

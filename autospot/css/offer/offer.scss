@@ -116,7 +116,7 @@
     .car-info{
         background: $header;
         width: 100%;
-        height: 550px;
+        height: 400px;
         margin: 0 auto;
         padding: 2% 0;
         
@@ -178,5 +178,59 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 980px){
+    .offer{
+
+        .car_title{
+            font-size: .7em;
+        }
+
+        .description, .specs{
+            font-size: .8em;   
+
+            .content{
+                width: 80%;
+            }
+        }
+
+        .car-info{
+
+            .left, .right{
+
+                .property-name, .property-value{
+                    p{
+                        font-size: 1em;
+                     }
+                }
+
+                
+            }
+        }
+
+        .contacts{
+            
+             padding-left: 3%;
+
+           
+
+            
+
+            .info{
+                padding-left: 10%;
+
+                p{
+                    font-size: 1em;
+    
+                    span{
+                        font-size: 1em;
+                    }
+               
+                }
+            }
+        }
+        
     }
 }

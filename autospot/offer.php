@@ -11,17 +11,19 @@
 ?>
 
 <section class="offer">
+    
     <script>
         function goBack(){
             window.history.back();
         }
     </script>
+
     <header>
         <span><button onclick="goBack()" id="backBtn">Назад</button></span>
         <span id="favBtn"><button><i class="fa fa-bookmark"></i>Добави в любими </i></button></span>
         
     </header>
-<?php while ($row = $result->fetch_assoc()) : ?>
+    <?php while ($row = $result->fetch_assoc()) : ?>
     <div class="car_title">
         <div class="left">
             <div class="title">

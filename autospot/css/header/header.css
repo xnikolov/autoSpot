@@ -59,6 +59,10 @@ header nav ul li a {
   font-size: 1.2em;
 }
 
+header nav ul li a span {
+  font-weight: bold;
+}
+
 header nav ul li:hover {
   background: #21ad40;
   -webkit-transition: .2s;
@@ -68,5 +72,28 @@ header nav ul li:hover {
 
 header nav ul li:last-child {
   margin-right: 0;
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 0 0;
+    width: 100%;
+  }
+  header h1 {
+    padding-left: 4%;
+  }
+  header h1 a {
+    font-size: 1em;
+  }
+  header nav ul {
+    padding-right: 20px;
+  }
+  header nav ul li {
+    width: 60px;
+    padding: 10px 5px;
+  }
+  header nav ul li a {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=header.css.map */

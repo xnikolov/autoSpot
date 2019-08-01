@@ -3,10 +3,10 @@
 
 <div class="container">
     <div class="heading-container">
-        <h1>Добавяне на нова обява</h1>
+        <h1>Добавяне на обява</h1>
     </div>
-    <form action="add-car-functions.php" method="POST" enctype="multipart/form-data">
-        <aside>
+    <form action="add-car-functions.php" method="POST" enctype="multipart/form-data" class="addNewForm">
+        <aside class="addNewLeft">
             <div class="make input-container">
                 <input type="text" name="make" id="car_make" placeholder="Марка" required>
             </div>
@@ -69,24 +69,8 @@
         </aside>
 
         <section class="add-new">
-            <div class="features">
-                <h2>Екстри</h2>
-                <label for=""><input type="checkbox" name="ac" id="airCond">Климатик</label>
-                <label for=""><input type="checkbox" name="leather" id="leather_seats">Кожен салон</label>
-                <label for=""><input type="checkbox" name="e-mirrors" id="e_mirrors">Ел. огледела</label>
-                <label for=""><input type="checkbox" name="e-seats" id="e_seats">Ел. седалки</label>
-                <label for=""><input type="checkbox" name="stereo" id="stereo_player">Стерео</label>
-                <label for=""><input type="checkbox" name="rims" id="alloy_rims">Лети джанти</label>
-            </div>
-            <div class="security">
-                <h2>Сигурност</h2>
-                <label for=""><input type="checkbox" name="airbag" id="air_bag">Airbag</label>
-                <label for=""><input type="checkbox" name="abs" id="abs_brakes">ABS</label>
-                <label for=""><input type="checkbox" name="esp" id="esp_control">ЕSP</label>
-                <label for=""><input type="checkbox" name="parkAssist" id="park_assist">Парктроник</label>
-                <label for=""><input type="checkbox" name="immobilizer" id="immobi">Имобилайзер</label>
-            </div>
-            <div class="description">
+           <div class="description">
+                <h2>Описание</h2>
                 <textarea type="text" name="description" cols="60" rows="5" id="car_description" placeholder="Опишете накратко автомобила си, за да улесните купувачите"></textarea>
             </div>
             <div class="image">
@@ -97,14 +81,15 @@
                 <input type="text" name="city" id="city_input" placeholder="Населено място" required>
             </div>
             <div class="phone">
+            <input type="phone" name="phone" id="phone_input" placeholder="Телефон" required>
+           
                 <select name="country" id="country_code" onselect="validatePhone();">
                     <option value="+359">+359</option>
                     <option value="+383">+383</option>
                     <option value="+381">+381</option>
                     <option value="+40">+40</option>
                 </select>
-                <input type="phone" name="phone" id="phone_input" placeholder="Телефон" required>
-            </div>
+             </div>
             
             <div class="price">
                 <input type="text" name="price" id="price_input" placeholder="Цена" required>

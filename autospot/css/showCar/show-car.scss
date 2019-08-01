@@ -86,3 +86,29 @@ section{
         }
     }
 }
+
+@media (max-width: 1190px){
+
+    section{
+        table{
+            width: 500px;
+            tr{
+                margin: 0;
+
+                td{
+                    width: 50px;
+                }
+
+                .carTitle, .carPrice{
+                    font-size: 1em;
+                    width: 50px;
+                }
+                
+            }
+            img{
+                width: 150px;
+            }
+        }
+    }
+    
+}

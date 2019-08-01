@@ -114,7 +114,7 @@
 .offer .car-info {
   background: #6300B4;
   width: 100%;
-  height: 550px;
+  height: 400px;
   margin: 0 auto;
   padding: 2% 0;
 }
@@ -176,5 +176,32 @@
 .offer .contacts .info p span {
   font-size: .8em;
   font-weight: normal;
+}
+
+@media (max-width: 980px) {
+  .offer .car_title {
+    font-size: .7em;
+  }
+  .offer .description, .offer .specs {
+    font-size: .8em;
+  }
+  .offer .description .content, .offer .specs .content {
+    width: 80%;
+  }
+  .offer .car-info .left .property-name p, .offer .car-info .left .property-value p, .offer .car-info .right .property-name p, .offer .car-info .right .property-value p {
+    font-size: 1em;
+  }
+  .offer .contacts {
+    padding-left: 3%;
+  }
+  .offer .contacts .info {
+    padding-left: 10%;
+  }
+  .offer .contacts .info p {
+    font-size: 1em;
+  }
+  .offer .contacts .info p span {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=offer.css.map */

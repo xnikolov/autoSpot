@@ -1,7 +1,7 @@
 /*COLORS*/
 .container {
   width: 100%;
-  height: 110vh;
+  height: 1000px;
   display: block;
 }
 
@@ -23,7 +23,7 @@
 
 .container .heading-container {
   background: #21ad40;
-  padding: 15px 100px;
+  padding: 10px 5%;
 }
 
 .container .heading-container h1 {
@@ -31,24 +31,23 @@
   color: #fff;
 }
 
-.container form {
+.container .addNewForm {
   width: 100%;
   height: 100%;
   display: block;
   background: #410075;
 }
 
-.container form aside {
-  -webkit-box-shadow: 2px 3px 8px #000;
-          box-shadow: 2px 3px 8px #000;
+.container .addNewForm .addNewLeft {
+  height: 800px;
 }
 
-.container form aside .input-container {
+.container .addNewForm .addNewLeft .input-container {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.container form aside .input-container select, .container form aside .input-container input, .container form aside .input-container #adv-search-btn {
+.container .addNewForm .addNewLeft .input-container select, .container .addNewForm .addNewLeft .input-container input, .container .addNewForm .addNewLeft .input-container #adv-search-btn {
   width: 235px;
   padding: 8px 10px;
   margin-left: 10px;
@@ -60,78 +59,71 @@
   font-size: 1.1em;
 }
 
-.container form aside .input-container select option, .container form aside .input-container input option, .container form aside .input-container #adv-search-btn option {
+.container .addNewForm .addNewLeft .input-container select option, .container .addNewForm .addNewLeft .input-container input option, .container .addNewForm .addNewLeft .input-container #adv-search-btn option {
   color: white;
 }
 
-.container form aside .input-container input::-webkit-input-placeholder {
+.container .addNewForm .addNewLeft .input-container input::-webkit-input-placeholder {
   color: #fff;
 }
 
-.container form aside .input-container input:-ms-input-placeholder {
+.container .addNewForm .addNewLeft .input-container input:-ms-input-placeholder {
   color: #fff;
 }
 
-.container form aside .input-container input::-ms-input-placeholder {
+.container .addNewForm .addNewLeft .input-container input::-ms-input-placeholder {
   color: #fff;
 }
 
-.container form aside .input-container input::placeholder {
+.container .addNewForm .addNewLeft .input-container input::placeholder {
   color: #fff;
 }
 
-.container form aside .input-container .longInput {
+.container .addNewForm .addNewLeft .input-container .longInput {
   width: 115px;
 }
 
-.container form aside .input-container .shortInput {
+.container .addNewForm .addNewLeft .input-container .shortInput {
   width: 60px;
 }
 
-.container form aside .input-container #search-btn {
+.container .addNewForm .addNewLeft .input-container #search-btn {
   margin-bottom: 10px;
   background: #21ad40;
   cursor: pointer;
 }
 
-.container form aside .input-container #adv-search-btn {
-  padding: 10px 35px;
-  margin-left: 12px;
-  background: none;
-  cursor: pointer;
-}
-
-.container form .add-new {
+.container .addNewForm .add-new {
   display: inline-block;
   width: 70%;
   padding-bottom: 40px;
   background: #410075;
 }
 
-.container form .add-new .features {
+.container .addNewForm .add-new .features {
   padding-top: 45px;
 }
 
-.container form .add-new .features, .container form .add-new .security, .container form .add-new .city, .container form .add-new .price, .container form .add-new .description, .container form .add-new .image, .container form .add-new .phone {
+.container .addNewForm .add-new .features, .container .addNewForm .add-new .security, .container .addNewForm .add-new .city, .container .addNewForm .add-new .price, .container .addNewForm .add-new .description, .container .addNewForm .add-new .image, .container .addNewForm .add-new .phone {
   padding-left: 5%;
   margin-bottom: 20px;
   color: #fff;
   width: 100%;
 }
 
-.container form .add-new .features h2, .container form .add-new .security h2, .container form .add-new .city h2, .container form .add-new .price h2, .container form .add-new .description h2, .container form .add-new .image h2, .container form .add-new .phone h2 {
+.container .addNewForm .add-new .features h2, .container .addNewForm .add-new .security h2, .container .addNewForm .add-new .city h2, .container .addNewForm .add-new .price h2, .container .addNewForm .add-new .description h2, .container .addNewForm .add-new .image h2, .container .addNewForm .add-new .phone h2 {
   margin-bottom: 10px;
 }
 
-.container form .add-new .features input, .container form .add-new .security input, .container form .add-new .city input, .container form .add-new .price input, .container form .add-new .description input, .container form .add-new .image input, .container form .add-new .phone input {
+.container .addNewForm .add-new .features input, .container .addNewForm .add-new .security input, .container .addNewForm .add-new .city input, .container .addNewForm .add-new .price input, .container .addNewForm .add-new .description input, .container .addNewForm .add-new .image input, .container .addNewForm .add-new .phone input {
   margin-left: 2%;
 }
 
-.container form .add-new .city, .container form .add-new .price, .container form .add-new .phone {
+.container .addNewForm .add-new .city, .container .addNewForm .add-new .price, .container .addNewForm .add-new .phone {
   margin-left: 20px;
 }
 
-.container form .add-new .city input, .container form .add-new .price input, .container form .add-new .phone input {
+.container .addNewForm .add-new .city input, .container .addNewForm .add-new .city #country_code, .container .addNewForm .add-new .price input, .container .addNewForm .add-new .price #country_code, .container .addNewForm .add-new .phone input, .container .addNewForm .add-new .phone #country_code {
   width: 235px;
   padding: 8px 10px;
   border: 1px #E3E3E3 solid;
@@ -142,7 +134,16 @@
   font-size: 1.1em;
 }
 
-.container form .add-new .description textarea {
+.container .addNewForm .add-new .city #country_code, .container .addNewForm .add-new .price #country_code, .container .addNewForm .add-new .phone #country_code {
+  width: 90px;
+}
+
+.container .addNewForm .add-new .description {
+  margin-top: 60px;
+  width: 400px;
+}
+
+.container .addNewForm .add-new .description textarea {
   padding: 8px 10px;
   border: 1px #E3E3E3 solid;
   background: unset;
@@ -152,17 +153,19 @@
   font-size: 1.1em;
 }
 
-.container form .add-new .image {
+.container .addNewForm .add-new .image {
   width: 700px;
+  margin-top: 60px;
 }
 
-.container form .add-new .image label {
+.container .addNewForm .add-new .image label {
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.5em;
+  font-weight: bold;
   padding: 5px 10px 20px 8px;
 }
 
-.container form .add-new .image input {
+.container .addNewForm .add-new .image input {
   width: 235px;
   padding: 8px 10px;
   margin-bottom: 40px;
@@ -174,23 +177,23 @@
   font-size: 1.1em;
 }
 
-.container form .add-new .price {
+.container .addNewForm .add-new .price {
   margin-top: 40px;
 }
 
-.container form .add-new .price input {
+.container .addNewForm .add-new .price input {
   padding: 10px 20px;
   font-size: 1.3em;
 }
 
-.container form .add-new .submit {
+.container .addNewForm .add-new .submit {
   margin-top: 20px;
   margin-left: 3%;
 }
 
-.container form .add-new .submit input {
+.container .addNewForm .add-new .submit input {
   border-radius: 10px;
-  border: .5px solid #fff;
+  border: .8px solid #fff;
   background: #21ad40;
   color: #fff;
   padding: 12px 20px;
@@ -198,10 +201,86 @@
   font-size: 1.1em;
 }
 
-.container form .add-new .submit input:hover {
+.container .addNewForm .add-new .submit input:hover {
   background: unset;
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media only screen and (max-width: 1030px) {
+  .container {
+    width: 100%;
+  }
+  .container .heading-container {
+    width: 100%;
+    padding: 0;
+  }
+  .container .heading-container h1 {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    padding-left: 80px;
+    font-size: 1.5em;
+  }
+  .container .addNewForm {
+    width: 100%;
+    height: 900px;
+  }
+  .container .addNewForm .addNewLeft {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  .container .addNewForm .addNewLeft .input-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .container .addNewForm .addNewLeft .input-container input, .container .addNewForm .addNewLeft .input-container select {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px;
+  }
+  .container .addNewForm .addNewLeft .input-container input {
+    width: 90%;
+  }
+  .container .addNewForm .add-new {
+    display: block;
+    width: 100%;
+    margin: 0;
+    background: #410075;
+  }
+  .container .addNewForm .add-new .description, .container .addNewForm .add-new .city, .container .addNewForm .add-new .phone, .container .addNewForm .add-new .image, .container .addNewForm .add-new .price {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .container .addNewForm .add-new .description h2, .container .addNewForm .add-new .city h2, .container .addNewForm .add-new .phone h2, .container .addNewForm .add-new .image h2, .container .addNewForm .add-new .price h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .container .addNewForm .add-new .description textarea, .container .addNewForm .add-new .description input, .container .addNewForm .add-new .description select, .container .addNewForm .add-new .city textarea, .container .addNewForm .add-new .city input, .container .addNewForm .add-new .city select, .container .addNewForm .add-new .phone textarea, .container .addNewForm .add-new .phone input, .container .addNewForm .add-new .phone select, .container .addNewForm .add-new .image textarea, .container .addNewForm .add-new .image input, .container .addNewForm .add-new .image select, .container .addNewForm .add-new .price textarea, .container .addNewForm .add-new .price input, .container .addNewForm .add-new .price select {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    background: #8a00fc;
+  }
+  .container .addNewForm .add-new .phone input {
+    margin-bottom: 20px;
+  }
+  .container .addNewForm .add-new .phone #country_code {
+    margin-bottom: 60px;
+  }
+  .container .addNewForm .add-new .submit {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .container .addNewForm .add-new .submit input {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=add-new.css.map */

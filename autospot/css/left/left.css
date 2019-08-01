@@ -68,4 +68,16 @@ aside form .input-container #adv-search-btn {
   background: none;
   cursor: pointer;
 }
+
+@media (max-width: 1190px) {
+  aside {
+    width: 100%;
+  }
+  aside form {
+    width: 75%;
+  }
+  aside form .input-container select, aside form .input-container input, aside form .input-container #adv-search-btn {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=left.css.map */

@@ -83,4 +83,23 @@ section table tr td #delete-btn {
 section table img {
   width: 220px;
 }
+
+@media (max-width: 1190px) {
+  section table {
+    width: 500px;
+  }
+  section table tr {
+    margin: 0;
+  }
+  section table tr td {
+    width: 50px;
+  }
+  section table tr .carTitle, section table tr .carPrice {
+    font-size: 1em;
+    width: 50px;
+  }
+  section table img {
+    width: 150px;
+  }
+}
 /*# sourceMappingURL=show-car.css.map */

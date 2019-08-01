@@ -58,3 +58,18 @@ aside{
     }
 
 }
+
+@media (max-width: 1190px){
+    aside{
+        width: 100%;
+
+        form{
+            width: 75%;
+            .input-container{
+                select, input, #adv-search-btn{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
