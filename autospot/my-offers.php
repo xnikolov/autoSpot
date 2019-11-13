@@ -1,4 +1,6 @@
-
+<head>
+<link rel="stylesheet" href="css/showCar/show-car.css">
+</head>
 <?php 
 
             require_once 'delete.php';
@@ -9,31 +11,30 @@
             $result = $mysqli->query("SELECT * FROM cars ") or die($mysqli->error);
         // pre_r($result);
     ?>
-<div class="heading">
-    <h2>Моите обяви</h2>
-</div>
-<section id="myOffersSection">
-   
-    <table cellpadding="20" class="myOffersTable">
-       
-        <?php
-                 while ($row = $result->fetch_assoc()) : ?>
 
-                <tr>
-                    <td ><?php echo "<img src='images/".$row['car_image']."' alt='car image'>" ;?></td>
-                    <td class="carTitle"><?php echo $row['brand']; echo " "; echo  $row['model']; echo " "; echo $row['eddition']; ?></td>
-                    <td class="carType"><?php echo $row['car_type']; ?></td>
-                    <td class="carYear"><?php echo $row['car_year']; ?></td>
-                    <td class="carMileage"><?php echo $row['mileage']; echo 'км' ?></td>
-                    <td class="carPrice"><?php echo $row['price']; echo ' лв'?></td>
-                    <td class="carCity"><?php echo $row['city']; ?></td>
-                    <td><a href="my-offers.php?delete=<?php echo $row['id'];?>" id="delete-btn">Изтриване</a></td>
-                </tr>
-                
-        <?php endwhile; ?>
-        
-   
+<div class="container">
+    <div class="row my-3 mx-2 title">
+        <h2 class="mx-auto">Моите обяви</h2>
     </div>
-    </table>
-  
-</section>
+    <div class="row">
+        <div class="card mx-auto" style="width: 18rem;">
+        <?php while ($row = $result->fetch_assoc()) :?>
+            <img class="mx-auto mt-5" src="<?php echo 'images/'.$row['car_image']?>" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <h5 class="card-title"><?php echo $row['brand'].' '.$row['model'].' '.'<span>'.$row['eddition'].'</span>'?></h5>
+                <a href="my-offers.php?edit=<?php echo $row['id']?>" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                <a href="offer.php?offer_id=<?php echo $row['id']?>" class="btn btn-success"><i class="fas fa-search-plus"></i></a>
+                <a href="my-offers.php?delete=<?php echo $row['id']?>" class="btn btn-danger"><i class="fas fa-times-circle"></i></a>
+            </div>
+            <hr>
+            <?php endwhile;?>
+
+        </div>
+        
+<?php if($result == false){
+    echo "<h4>Няма никой тук все още...</h4>";
+    echo "<p>Добави първата си обява от <span style='background:#fc9a03;color:#fff;border-radius:10px;' class='px-1 py-1'>оранжевия</span> бутон горе <i class='fas fa-level-up-alt'></i></p>"; 
+}?>
+    </div>
+ </div>
+

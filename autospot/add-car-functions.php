@@ -4,8 +4,6 @@
     $mysqli = new mysqli ('localhost', 'root', '', 'autospot_db') or die (mysqli_error($mysqli));
     $mysqli->set_charset('utf8'); //set charset
 
-
-
     //input fields varibles
     $make = "";
     $model = "";
